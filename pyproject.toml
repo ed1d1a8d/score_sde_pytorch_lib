@@ -1,0 +1,21 @@
+# See https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "score_sde"
+description = "Score-Based Generative Modeling through SDEs"
+requires-python = ">=3.8"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    "ml-collections",
+    "absl-py",
+    "torch >= 1.7.0",
+    "torchvision",
+    "ninja",
+]
+
+[tool.setuptools.packages.find]
+include = ["configs", "models", "op", "*.py"]
