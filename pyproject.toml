@@ -17,5 +17,5 @@ dependencies = [
     "ninja",
 ]
 
-[tool.setuptools.packages.find]
-include = ["configs", "models", "op", "*.py"]
+[tool.setuptools]
+packages = ["score_sde"]
