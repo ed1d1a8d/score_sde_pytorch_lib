@@ -16,7 +16,7 @@
 # Lint as: python3
 """Training NCSNv3 on CIFAR-10 with continuous sigmas."""
 
-from configs.default_cifar10_configs import get_default_configs
+from score_sde.configs.default_cifar10_configs import get_default_configs
 
 
 def get_config():

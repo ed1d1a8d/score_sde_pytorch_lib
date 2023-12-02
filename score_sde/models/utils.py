@@ -16,10 +16,9 @@
 """All functions and modules related to model definition.
 """
 
-import torch
-import sde_lib
 import numpy as np
-
+import torch
+from score_sde import sde_lib
 
 _MODELS = {}
 
