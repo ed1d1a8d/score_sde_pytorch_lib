@@ -22,7 +22,7 @@ import torch
 import numpy as np
 import abc
 
-from models.utils import from_flattened_numpy, to_flattened_numpy, get_score_fn
+from score_sde.models.utils import from_flattened_numpy, to_flattened_numpy, get_score_fn
 from scipy import integrate
 import score_sde.sde_lib
 from score_sde.models import utils as mutils
